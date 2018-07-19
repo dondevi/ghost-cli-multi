@@ -1,0 +1,19 @@
+{
+  "name": "navigation",
+  "version": "0.1.0",
+  "dependencies": {
+    "ghost-app": "0.0.3"
+  },
+  "author": {
+    "name": "dondevi",
+    "email": "don.devi.don@gmail.com"
+  },
+  "ghost": {
+    "permissions": {
+      "helpers": [
+        "primary_slug",
+        "nav_tree"
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "ghost-data-poster",
+  "description": "Post json data to Ghost Admin.",
+  "version": "1.0.0",
+  "author": "dondevi",
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "puppeteer": "1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+}

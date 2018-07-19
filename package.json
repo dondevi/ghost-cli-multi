@@ -1,0 +1,21 @@
+{
+  "name": "ghost-dev-multiple",
+  "description": "Develop multiple blogs on one ghost (1.22.1).",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "dondevi",
+    "email": "don.devi.don@gmail.com"
+  },
+  "engines": {
+    "node": "6-slim"
+  },
+  "scripts": {
+    "init": "npm run init:ghost && npm run init:projects",
+    "init:nvm": "mklink /D %APPDATA%\\npm %NVM_SYMLINK%",
+    "init:cli": "npm install -g ghost-cli && npm install -g nodemon",
+    "init:ghost": "ghost install 1.22.1 --local --dir=.bin/.ghost --db=sqlite3 & cd .ghost && ghost stop",
+    "init:projects": "node -e require('./.bin/index.js').init()",
+    "add": "set /P \"NODE_ENV=Project name: \" && node -e require('./.bin/index.js').add()",
+  }
+}
