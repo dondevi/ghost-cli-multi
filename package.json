@@ -11,11 +11,13 @@
     "node": "6-slim"
   },
   "scripts": {
-    "init": "npm run init:ghost && npm run init:projects",
-    "init:nvm": "mklink /D %APPDATA%\\npm %NVM_SYMLINK%",
-    "init:cli": "npm install -g ghost-cli && npm install -g nodemon",
-    "init:ghost": "ghost install 1.22.1 --local --dir=.bin/.ghost --db=sqlite3 & cd .ghost && ghost stop",
-    "init:projects": "node -e require('./.bin/index.js').init()",
-    "add": "set /P \"NODE_ENV=Project name: \" && node -e require('./.bin/index.js').add()",
+    "env": "node .bin/env.js",
+    "init": "node .bin/init.js",
+    "new": "node .bin/new.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "inquirer": "^6.0.0",
+    "shelljs": "^0.8.2"
   }
 }

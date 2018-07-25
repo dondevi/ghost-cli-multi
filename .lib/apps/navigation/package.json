@@ -1,5 +1,6 @@
 {
   "name": "navigation",
+  "description": "Custom helpers for Ghost.",
   "version": "0.1.0",
   "dependencies": {
     "ghost-app": "0.0.3"

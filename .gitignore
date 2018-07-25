@@ -1,0 +1,8 @@
+*.log
+.git
+.svn
+.idea
+.cache
+.ghost
+.DS_Store
+node_modules
