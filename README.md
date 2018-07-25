@@ -4,7 +4,7 @@
 <br>
 
 ## Initialation
-> <https://docs.ghost.org/v1.0.0/docs/install-local>
+<!-- > <https://docs.ghost.org/v1.0.0/docs/install-local> -->
 
 ```bash
   $ npm run env
