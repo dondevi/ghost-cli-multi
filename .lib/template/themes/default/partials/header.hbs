@@ -1,0 +1,18 @@
+<header>
+  {{#nav_tree limit="all"}}
+    <nav>
+      {{#foreach data}}
+        <li class="{{slug}} {{#if active}}active{{/if}}">
+          <a href="{{url}}"> {{label}} </a>
+          <ul>
+            {{#foreach children}}
+              <li class="{{#if active}}active{{/if}}">
+                <a href="{{url}}"> {{label}} </a>
+              </li>
+            {{/foreach}}
+          </ul>
+        </li>
+      {{/foreach}}
+    </nav>
+  {{/nav_tree}}
+</header>

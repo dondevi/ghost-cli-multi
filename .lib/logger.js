@@ -16,7 +16,7 @@ class Logger {
    * @param  {Array}  tasks
    */
   constructor (title, tasks) {
-    this.title = chalk.cyan(title);
+    this.title = chalk.bold.cyan(title);
     this.tasks = tasks.map((task, index) => {
       task.prefix = `[${index + 1}/${tasks.length}]`;
       return task;

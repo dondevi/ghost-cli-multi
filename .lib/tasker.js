@@ -17,7 +17,7 @@ class tasker {
     const start = Date.now();
     const logger = new Logger(title, tasks);
     logger.start();
-    execSequence(tasks, task => {
+    return execSequence(tasks, task => {
       task.status = 1;
       return Promise.resolve(task.exec()).then(message => {
         task.message = [].concat(message).filter(m => m).join(", ");

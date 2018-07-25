@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>404</title>
+  <style>
+    html, body {
+      overflow: hidden;
+      *overflow: auto;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+      text-align: center;
+    }
+    body:before, .main, h1, .desc {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    body:before {
+      content: '';
+      height: 100%;
+      margin: 0 -4px;
+    }
+    .main {
+      max-width: 100%;
+      margin-bottom: 4%;
+      *position: relative;
+      *top: 40%;
+      *width: 642px;
+    }
+    h1, strong {
+      color: #ee5b28;
+      font-weight: normal;
+      font-family: '微软雅黑';
+    }
+    h1 {
+      *float: left;
+      display: inline;
+      *margin-top: -40px;
+      margin-right: 10px;
+      font-size: 150px;
+    }
+    .desc {
+      text-align: left;
+    }
+    strong {
+      font-size: 40px;
+      color: #d34215;
+    }
+    a, p {
+      font-size: 15px;
+    }
+    a {
+      color: #0259ff;
+      text-decoration: none;
+    }
+    p {
+      color: #333;
+    }
+    @media (max-width: 480px) {
+      h1 { font-size: 100px; }
+      .desc { text-align: center; }
+      strong { font-size: 20px; }
+      a, p { font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <span class="before"></span>
+  <div class="main">
+    <h1>404</h1>
+    <div class="desc">
+      <strong>抱歉，出现错误了！</strong>
+      <p>可能网络原因出现临时错误，您可以去其他地方看看：</p>
+      <a href="/">首页</a>
+    </div>
+  </div>
+
+</body>
+</html>

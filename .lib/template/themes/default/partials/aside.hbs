@@ -1,0 +1,21 @@
+<aside>
+  {{#nav_tree}}
+    {{#foreach data}}
+      <h2> {{label}} </h2>
+      <ul role="tablist">
+        {{#foreach children}}
+          <li {{#if active}}class="active"{{/if}} role="presentation">
+            <a href="{{url}}"> {{label}} </a>
+            <ul class="nav nav-stacked" role="tablist">
+              {{#foreach children}}
+                <li {{#if active}}class="active"{{/if}} role="presentation">
+                  <a href="{{url}}"> {{label}} </a>
+                </li>
+              {{/foreach}}
+            </ul>
+          </li>
+        {{/foreach}}
+      </ul>
+    {{/foreach}}
+  {{/nav_tree}}
+</aside>

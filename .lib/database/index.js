@@ -9,7 +9,7 @@
  */
 
 const path = require("path");
-const cwd = path.resolve(__dirname, "../");
+const cwd = path.resolve(__dirname, "../../");
 const ghost = path.resolve(cwd, ".ghost");
 const models = require(`${ghost}/current/core/server/models`);
 
@@ -92,4 +92,4 @@ async function importContent (options) {
 }
 
 
-module.exports = { main };
+module.exports = main;
