@@ -4,14 +4,14 @@
 <br>
 
 ## Initialation
-> <https://docs.ghost.org/v1.0.0/docs/install-local>{target="\_blank"}
+> <https://docs.ghost.org/v1.0.0/docs/install-local>
 
 ```bash
   $ npm run env
 ```
 
 ## Development
-> <https://themes.ghost.org/>{target="\_blank"}
+> <https://themes.ghost.org/>
 
 ### New Project
 
