@@ -1,7 +1,7 @@
-# ghost-dev-multiple
+# ghost-cli-multi
 > A solution *make do with* officail website development by Ghostjs 1.22.1.
 
-<br>
+Develop multiple blogs on one ghost server.
 
 ## Initialation
 <!-- > <https://docs.ghost.org/v1.0.0/docs/install-local> -->
